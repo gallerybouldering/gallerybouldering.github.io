@@ -1,1 +1,47 @@
-FUN
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+html
+{
+    background:url("https://www.hotelmedici.com/images/slide_home/11_Fori_imperiali_1600X917.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+#warning-message { display: none; }
+
+@media only screen and (orientation:portrait)
+{
+    #wrapper { display:none; }
+    #warning-message { display:block; color: white;}
+    
+    html
+    {
+        background:url("https://s3files.core77.com/blog/images/2013/11/ESB-HalloweenLightShow-1.jpg") no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+    }       
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+    <h2>Responsive Images</h2>
+    <p>If you want the image to scale both up and down on responsiveness, set the CSS width property to 100% and height to auto.</p>
+    <p>Resize the browser window to see the effect.</p>
+</div>
+
+<div id="warning-message">
+    this website is only viewable in landscape mode
+</div>
+
+</body>
+</html>
+
